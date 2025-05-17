@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+
+.section {
+  padding: 80px 0;
+}
+
+/* Navbar background */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.85); /* Slightly darker for better visibility */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Navbar links */
+nav{
+margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none; /* Optional: in case any shadow causing white gap */
+}
+  .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* Make sure content doesn't go under fixed navbar */
+body {
+  padding-top: 70px;
+  margin: 0;
+  padding: 0;
+}
+header, section {
+  margin: 0;
+  padding: 0;
+}
+/* Ensure toggle icon is visible in mobile */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1); /* Makes the icon white */
+}
+
+
+/* Home Section */
+.home-section {
+  background-image: url('https://images.pexels.com/photos/346842/pexels-photo-346842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Replace with your own image path if needed */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#content {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Destination cards */
+#destinations .col-md-4 {
+  margin-bottom: 30px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  #content {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+footer {
+  font-size: 16px;
+  background-color: #222;
+  padding: 15px 0;
+  color: #fff;
+}
+/* Destination Card Styles */
+.destination-card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.destination-card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.destination-card .card-body {
+  padding: 20px;
+}
+
+.section-title {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+.contact-section {
+  background-color: #f8f9fa;
+}
+.contact-section h2 {
+  font-weight: 600;
+}
+#formMessage {
+  font-weight: 500;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel Buddy App</title>
+  <link rel="stylesheet" href="searchh.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa-NxpQcLfK6oZ6Y84CQD3du71ZOR5L2g&libraries=places"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📍 Find your Tourist Places & Nearby Places</h1>
+    <input type="text" id="cityInput" placeholder="Enter your city (e.g., Ooty)" autocomplete="off" />
+    <button onclick="findTouristPlaces()">Find Tourist Places</button>
+    <button onclick="findNearbyPlaces()">Find Nearby Places</button>
+
+    <div id="locationDisplay"></div>
+    <div id="placesList" class="cards-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
